@@ -24,6 +24,7 @@ int main() {
         int str = 0;
         while (!file.eof())
         {
+            t.reset();
             getline(file, s);
             for (size_t i = 0; i < s.length(); i++) {
                 if (t.next(s[i])) {
